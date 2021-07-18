@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3DDBCBC26A3BAF200717DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDBCBB26A3BAF200717DA1 /* AppDelegate.swift */; };
+		E3DDBCBE26A3BAF200717DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDBCBD26A3BAF200717DA1 /* SceneDelegate.swift */; };
+		E3DDBCC326A3BAF200717DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DDBCC126A3BAF200717DA1 /* Main.storyboard */; };
+		E3DDBCC526A3BAF300717DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DDBCC426A3BAF300717DA1 /* Assets.xcassets */; };
+		E3DDBCC826A3BAF300717DA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DDBCC626A3BAF300717DA1 /* LaunchScreen.storyboard */; };
+		E3DDBCD326A3BAF400717DA1 /* iterable_nngoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDBCD226A3BAF400717DA1 /* iterable_nngoTests.swift */; };
+		E3DDBCDE26A3BAF400717DA1 /* iterable_nngoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDBCDD26A3BAF400717DA1 /* iterable_nngoUITests.swift */; };
+		E3DDBCF226A3BB2C00717DA1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDBCF126A3BB2C00717DA1 /* NotificationService.swift */; };
+		E3DDBCF626A3BB2C00717DA1 /* notification-service-ext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E3DDBCEF26A3BB2C00717DA1 /* notification-service-ext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E3DDBCFD26A3BB5D00717DA1 /* IterableSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E3DDBCFC26A3BB5D00717DA1 /* IterableSDK */; };
+		E3DDBCFF26A3BB5D00717DA1 /* IterableAppExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = E3DDBCFE26A3BB5D00717DA1 /* IterableAppExtensions */; };
+		E3DDBD0126A3BCC800717DA1 /* UpdateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDBD0026A3BCC800717DA1 /* UpdateProfile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3DDBCCF26A3BAF400717DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DDBCB026A3BAF100717DA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DDBCB726A3BAF100717DA1;
+			remoteInfo = "iterable-nngo";
+		};
+		E3DDBCDA26A3BAF400717DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DDBCB026A3BAF100717DA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DDBCB726A3BAF100717DA1;
+			remoteInfo = "iterable-nngo";
+		};
+		E3DDBCF426A3BB2C00717DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DDBCB026A3BAF100717DA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DDBCEE26A3BB2C00717DA1;
+			remoteInfo = "notification-service-ext";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3DDBCFA26A3BB2C00717DA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E3DDBCF626A3BB2C00717DA1 /* notification-service-ext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E3DDBCB826A3BAF100717DA1 /* iterable-nngo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iterable-nngo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDBCBB26A3BAF200717DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3DDBCBD26A3BAF200717DA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3DDBCC226A3BAF200717DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3DDBCC426A3BAF300717DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3DDBCC726A3BAF300717DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3DDBCC926A3BAF300717DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DDBCCE26A3BAF400717DA1 /* iterable-nngoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iterable-nngoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDBCD226A3BAF400717DA1 /* iterable_nngoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iterable_nngoTests.swift; sourceTree = "<group>"; };
+		E3DDBCD426A3BAF400717DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DDBCD926A3BAF400717DA1 /* iterable-nngoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iterable-nngoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDBCDD26A3BAF400717DA1 /* iterable_nngoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iterable_nngoUITests.swift; sourceTree = "<group>"; };
+		E3DDBCDF26A3BAF400717DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DDBCEF26A3BB2C00717DA1 /* notification-service-ext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "notification-service-ext.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDBCF126A3BB2C00717DA1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E3DDBCF326A3BB2C00717DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DDBD0026A3BCC800717DA1 /* UpdateProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3DDBCB526A3BAF100717DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCFD26A3BB5D00717DA1 /* IterableSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCCB26A3BAF400717DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCD626A3BAF400717DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCEC26A3BB2C00717DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCFF26A3BB5D00717DA1 /* IterableAppExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3DDBCAF26A3BAF100717DA1 = {
+			isa = PBXGroup;
+			children = (
+				E3DDBCBA26A3BAF100717DA1 /* iterable-nngo */,
+				E3DDBCD126A3BAF400717DA1 /* iterable-nngoTests */,
+				E3DDBCDC26A3BAF400717DA1 /* iterable-nngoUITests */,
+				E3DDBCF026A3BB2C00717DA1 /* notification-service-ext */,
+				E3DDBCB926A3BAF100717DA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3DDBCB926A3BAF100717DA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDBCB826A3BAF100717DA1 /* iterable-nngo.app */,
+				E3DDBCCE26A3BAF400717DA1 /* iterable-nngoTests.xctest */,
+				E3DDBCD926A3BAF400717DA1 /* iterable-nngoUITests.xctest */,
+				E3DDBCEF26A3BB2C00717DA1 /* notification-service-ext.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3DDBCBA26A3BAF100717DA1 /* iterable-nngo */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDBCBB26A3BAF200717DA1 /* AppDelegate.swift */,
+				E3DDBCBD26A3BAF200717DA1 /* SceneDelegate.swift */,
+				E3DDBD0026A3BCC800717DA1 /* UpdateProfile.swift */,
+				E3DDBCC126A3BAF200717DA1 /* Main.storyboard */,
+				E3DDBCC426A3BAF300717DA1 /* Assets.xcassets */,
+				E3DDBCC626A3BAF300717DA1 /* LaunchScreen.storyboard */,
+				E3DDBCC926A3BAF300717DA1 /* Info.plist */,
+			);
+			path = "iterable-nngo";
+			sourceTree = "<group>";
+		};
+		E3DDBCD126A3BAF400717DA1 /* iterable-nngoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDBCD226A3BAF400717DA1 /* iterable_nngoTests.swift */,
+				E3DDBCD426A3BAF400717DA1 /* Info.plist */,
+			);
+			path = "iterable-nngoTests";
+			sourceTree = "<group>";
+		};
+		E3DDBCDC26A3BAF400717DA1 /* iterable-nngoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDBCDD26A3BAF400717DA1 /* iterable_nngoUITests.swift */,
+				E3DDBCDF26A3BAF400717DA1 /* Info.plist */,
+			);
+			path = "iterable-nngoUITests";
+			sourceTree = "<group>";
+		};
+		E3DDBCF026A3BB2C00717DA1 /* notification-service-ext */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDBCF126A3BB2C00717DA1 /* NotificationService.swift */,
+				E3DDBCF326A3BB2C00717DA1 /* Info.plist */,
+			);
+			path = "notification-service-ext";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3DDBCB726A3BAF100717DA1 /* iterable-nngo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DDBCE226A3BAF400717DA1 /* Build configuration list for PBXNativeTarget "iterable-nngo" */;
+			buildPhases = (
+				E3DDBCB426A3BAF100717DA1 /* Sources */,
+				E3DDBCB526A3BAF100717DA1 /* Frameworks */,
+				E3DDBCB626A3BAF100717DA1 /* Resources */,
+				E3DDBCFA26A3BB2C00717DA1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DDBCF526A3BB2C00717DA1 /* PBXTargetDependency */,
+			);
+			name = "iterable-nngo";
+			packageProductDependencies = (
+				E3DDBCFC26A3BB5D00717DA1 /* IterableSDK */,
+			);
+			productName = "iterable-nngo";
+			productReference = E3DDBCB826A3BAF100717DA1 /* iterable-nngo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3DDBCCD26A3BAF400717DA1 /* iterable-nngoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DDBCE526A3BAF400717DA1 /* Build configuration list for PBXNativeTarget "iterable-nngoTests" */;
+			buildPhases = (
+				E3DDBCCA26A3BAF400717DA1 /* Sources */,
+				E3DDBCCB26A3BAF400717DA1 /* Frameworks */,
+				E3DDBCCC26A3BAF400717DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DDBCD026A3BAF400717DA1 /* PBXTargetDependency */,
+			);
+			name = "iterable-nngoTests";
+			productName = "iterable-nngoTests";
+			productReference = E3DDBCCE26A3BAF400717DA1 /* iterable-nngoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3DDBCD826A3BAF400717DA1 /* iterable-nngoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DDBCE826A3BAF400717DA1 /* Build configuration list for PBXNativeTarget "iterable-nngoUITests" */;
+			buildPhases = (
+				E3DDBCD526A3BAF400717DA1 /* Sources */,
+				E3DDBCD626A3BAF400717DA1 /* Frameworks */,
+				E3DDBCD726A3BAF400717DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DDBCDB26A3BAF400717DA1 /* PBXTargetDependency */,
+			);
+			name = "iterable-nngoUITests";
+			productName = "iterable-nngoUITests";
+			productReference = E3DDBCD926A3BAF400717DA1 /* iterable-nngoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E3DDBCEE26A3BB2C00717DA1 /* notification-service-ext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DDBCF726A3BB2C00717DA1 /* Build configuration list for PBXNativeTarget "notification-service-ext" */;
+			buildPhases = (
+				E3DDBCEB26A3BB2C00717DA1 /* Sources */,
+				E3DDBCEC26A3BB2C00717DA1 /* Frameworks */,
+				E3DDBCED26A3BB2C00717DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "notification-service-ext";
+			packageProductDependencies = (
+				E3DDBCFE26A3BB5D00717DA1 /* IterableAppExtensions */,
+			);
+			productName = "notification-service-ext";
+			productReference = E3DDBCEF26A3BB2C00717DA1 /* notification-service-ext.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3DDBCB026A3BAF100717DA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E3DDBCB726A3BAF100717DA1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					E3DDBCCD26A3BAF400717DA1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E3DDBCB726A3BAF100717DA1;
+					};
+					E3DDBCD826A3BAF400717DA1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E3DDBCB726A3BAF100717DA1;
+					};
+					E3DDBCEE26A3BB2C00717DA1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = E3DDBCB326A3BAF100717DA1 /* Build configuration list for PBXProject "iterable-nngo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3DDBCAF26A3BAF100717DA1;
+			packageReferences = (
+				E3DDBCFB26A3BB5C00717DA1 /* XCRemoteSwiftPackageReference "swift-sdk" */,
+			);
+			productRefGroup = E3DDBCB926A3BAF100717DA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3DDBCB726A3BAF100717DA1 /* iterable-nngo */,
+				E3DDBCCD26A3BAF400717DA1 /* iterable-nngoTests */,
+				E3DDBCD826A3BAF400717DA1 /* iterable-nngoUITests */,
+				E3DDBCEE26A3BB2C00717DA1 /* notification-service-ext */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3DDBCB626A3BAF100717DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCC826A3BAF300717DA1 /* LaunchScreen.storyboard in Resources */,
+				E3DDBCC526A3BAF300717DA1 /* Assets.xcassets in Resources */,
+				E3DDBCC326A3BAF200717DA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCCC26A3BAF400717DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCD726A3BAF400717DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCED26A3BB2C00717DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3DDBCB426A3BAF100717DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCBC26A3BAF200717DA1 /* AppDelegate.swift in Sources */,
+				E3DDBD0126A3BCC800717DA1 /* UpdateProfile.swift in Sources */,
+				E3DDBCBE26A3BAF200717DA1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCCA26A3BAF400717DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCD326A3BAF400717DA1 /* iterable_nngoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCD526A3BAF400717DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCDE26A3BAF400717DA1 /* iterable_nngoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DDBCEB26A3BB2C00717DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DDBCF226A3BB2C00717DA1 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3DDBCD026A3BAF400717DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DDBCB726A3BAF100717DA1 /* iterable-nngo */;
+			targetProxy = E3DDBCCF26A3BAF400717DA1 /* PBXContainerItemProxy */;
+		};
+		E3DDBCDB26A3BAF400717DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DDBCB726A3BAF100717DA1 /* iterable-nngo */;
+			targetProxy = E3DDBCDA26A3BAF400717DA1 /* PBXContainerItemProxy */;
+		};
+		E3DDBCF526A3BB2C00717DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DDBCEE26A3BB2C00717DA1 /* notification-service-ext */;
+			targetProxy = E3DDBCF426A3BB2C00717DA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3DDBCC126A3BAF200717DA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3DDBCC226A3BAF200717DA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3DDBCC626A3BAF300717DA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3DDBCC726A3BAF300717DA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3DDBCE026A3BAF400717DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3DDBCE126A3BAF400717DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3DDBCE326A3BAF400717DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iterable-nngo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3DDBCE426A3BAF400717DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iterable-nngo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3DDBCE626A3BAF400717DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iterable-nngoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iterable-nngo.app/iterable-nngo";
+			};
+			name = Debug;
+		};
+		E3DDBCE726A3BAF400717DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iterable-nngoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iterable-nngo.app/iterable-nngo";
+			};
+			name = Release;
+		};
+		E3DDBCE926A3BAF400717DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iterable-nngoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iterable-nngo";
+			};
+			name = Debug;
+		};
+		E3DDBCEA26A3BAF400717DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iterable-nngoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iterable-nngo";
+			};
+			name = Release;
+		};
+		E3DDBCF826A3BB2C00717DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "notification-service-ext/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngo.notification-service-ext";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3DDBCF926A3BB2C00717DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "notification-service-ext/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.namngo.iterable-nngo.notification-service-ext";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3DDBCB326A3BAF100717DA1 /* Build configuration list for PBXProject "iterable-nngo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DDBCE026A3BAF400717DA1 /* Debug */,
+				E3DDBCE126A3BAF400717DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DDBCE226A3BAF400717DA1 /* Build configuration list for PBXNativeTarget "iterable-nngo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DDBCE326A3BAF400717DA1 /* Debug */,
+				E3DDBCE426A3BAF400717DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DDBCE526A3BAF400717DA1 /* Build configuration list for PBXNativeTarget "iterable-nngoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DDBCE626A3BAF400717DA1 /* Debug */,
+				E3DDBCE726A3BAF400717DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DDBCE826A3BAF400717DA1 /* Build configuration list for PBXNativeTarget "iterable-nngoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DDBCE926A3BAF400717DA1 /* Debug */,
+				E3DDBCEA26A3BAF400717DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DDBCF726A3BB2C00717DA1 /* Build configuration list for PBXNativeTarget "notification-service-ext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DDBCF826A3BB2C00717DA1 /* Debug */,
+				E3DDBCF926A3BB2C00717DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3DDBCFB26A3BB5C00717DA1 /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iterable/swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3DDBCFC26A3BB5D00717DA1 /* IterableSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DDBCFB26A3BB5C00717DA1 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			productName = IterableSDK;
+		};
+		E3DDBCFE26A3BB5D00717DA1 /* IterableAppExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DDBCFB26A3BB5C00717DA1 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			productName = IterableAppExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E3DDBCB026A3BAF100717DA1 /* Project object */;
+}
