@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //init ITBL SDK
         let config = IterableConfig()
         IterableAPI.initialize(apiKey: "349dcc9373c74c6699c5d1204a271695", launchOptions: launchOptions, config: config)
-        IterableAPI.email = "nam13ngo@gmail.com"
+        IterableAPI.email = "n******o@gmail.com"
         config.inAppDisplayInterval = 1000.0
 
         
